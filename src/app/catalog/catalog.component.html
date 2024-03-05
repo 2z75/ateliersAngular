@@ -1,0 +1,27 @@
+<div>
+    <h2>Produits avec prix à définir</h2>
+    <ul>
+        <li *ngFor="let product of productsWithoutPrice">
+            {{ product.name }} -{{ product.promo }} de réduction !
+        </li>
+    </ul>
+</div>
+
+<div>
+    <h2>Produits en promotion</h2>
+    <ul>
+        <li *ngFor="let product of productPromo">
+        {{ product.name }} {{ product.price }}€ -{{ product.promo }} de réduction !
+        </li>
+    </ul>
+</div>
+
+<div>
+    <h2>Autres produits</h2>
+    <ul>
+        <li *ngFor="let product of otherProducts">
+        {{ product.name }} {{ product.price }}€
+        </li>
+    </ul>
+</div>
+

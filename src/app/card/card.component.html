@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="card">
+        <img [src]="card.picture" alt="tidus">
+        <h1> {{ card.title }} </h1>
+        <p [hidden]="isVisible"> {{ card.age }} ans</p>
+        <input type="text" [(ngModel)]="card.citation">
+        <p> {{ card.citation }}</p>
+        <button (click)="toggleIsVisible()">Afficher/Ne pas afficher</button>
+    </div>
+</div>
